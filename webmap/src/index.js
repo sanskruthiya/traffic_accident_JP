@@ -238,7 +238,7 @@ document.getElementById('b_location').addEventListener('click', function () {
             
             map.jumpTo({
                 center: [c_lng, c_lat],
-                zoom: init_zoom + 1,
+                zoom: map.getZoom(),
             });
 
             let popupContent = '<p class="tipstyle02">現在地はここです。</p><hr><p class="remark">地点情報が正確に取得できなかった場合は、現在地確認をもう一度お試しください。';
